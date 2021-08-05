@@ -8,10 +8,10 @@
 </head>
 <body>
 	<div id="app">
-		<img v-bind:src="picture" v-bind:alt="firstName">
+		<img :class="gender" v-bind:src="picture" v-bind:alt="firstName">
 		<h1> {{firstName}} {{lastName}}</h1>
 		<h3>{{email}}</h3>
-		<button>Get Random User</button>
+		<button :class="gender" v-on:click="getUser()">Get Random User</button>
 	</div>
 	
    <script src="https://unpkg.com/vue@next"></script>
